@@ -18,6 +18,10 @@ public class Factorial {
         sc.close();
         
         System.out.println("RESULTADO - En versiones posteriores se calculará el factorial del número " + num);
+        
+	}
+	private static long factorialBucle(int n) {
+		//TODO: crea tu el contenido de esta función... si eres capaz
 	}
 	private static Scanner sc = new Scanner(System.in);
 
