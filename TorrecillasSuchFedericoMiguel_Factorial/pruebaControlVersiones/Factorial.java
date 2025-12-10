@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Factorial {
 
 	public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
         System.out.print("Introduce un número entero mayor o igual que 0: ");
         int num = sc.nextInt();
@@ -17,6 +16,20 @@ public class Factorial {
         }
 
         sc.close();
+	}
+	private static Scanner sc = new Scanner(System.in);
+
+	
+
+    //TODO: Elimina en la función main la declaración de la variable `sc`, ya que vamos a usar el atributo de la clase.
+    //TODO: Haz una llamada adecuada a la función pedirNumero.
+	new pruebaControlVersiones.Factorial.pedirNumero();
+
+  
+
+	private static int pedirNumero() {
+	    System.out.print("Introduce un número entero mayor o igual que 0: ");
+	    return sc.nextInt();
 	}
 
 }
